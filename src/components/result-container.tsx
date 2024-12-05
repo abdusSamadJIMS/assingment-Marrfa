@@ -11,9 +11,11 @@ const ResultContainer = ({ articles }: { articles: Articles }) => {
     }
 
     if (articles.length <= 0) {
-        return <section
-            className='flex justify-center items-center text-2xl font-bold text-muted-foreground underline'
-        >No articles found.</section>
+        return (
+            <section
+                className='flex justify-center items-center text-2xl font-bold text-muted-foreground underline'>
+                No articles found.
+            </section>)
     }
 
 
